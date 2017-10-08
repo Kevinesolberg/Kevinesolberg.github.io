@@ -221,24 +221,6 @@
 
 
 	/** Responsive Web Design **/
-	@media screen and (max-width: 2200px){
-
-		.block-text {
-			height: 225px;
-		}
-
-		.col-md-4 {
-			height: 250px;
-		}
-
-		.btn-align {
-    		height: 78px;
-		}
-		.btn-primary {
-		    position: absolute;
-    		bottom: 35px;
-    	}
-	}
 
 	@media screen and (max-width: 991px) {
 
@@ -262,6 +244,7 @@
 	}
 
 	@media screen and (max-width: 475px){
+
 		
 		#content-home {
 			background: white;
