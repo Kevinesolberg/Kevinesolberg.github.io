@@ -16,7 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/justified-nav.css" rel="stylesheet">
-    <link href="kevincss_projects.css" rel="stylesheet">
+    <link href="../css/kevincss.css" rel="stylesheet">
     <script src="../js/jquery-1.11.3.min.js"></script>
     <link href="../css/jquery.bxslider.css" rel="stylesheet">
     <script src="../js/jquery.bxslider.min.js"></script>
@@ -64,111 +64,151 @@
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="btn-menu"><img id="menu-img" src="../images/menu.png"> <a id="menu-text">Menu</a>
             </button>
               <ul class="dropdown-menu">
-                <li><a href="../">Home</a></li>
+                <li><a href="../">About</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="../Publications">Publications</a></li>
+                <li><a href="../Media">Media</a></li>
                 <li><a href="../Vita">C.V.</a></li>
               </ul>
     </div>
   </div>
   <body>
-    <div class="container">
+  <div class="container">
 
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
         <nav>
           <ul class="nav nav-justified">
-            <li><a href="../">Home</a></li> 
+            <li><a href="../">About</a></li> 
             <li class="active"><a href="#">Projects</a></li>
-            <li><a href="../Publications">Publications</a></li>
+            <li><a href="../Media">Media</a></li>
             <li><a href="../Vita">C.V.</a></li>
             <!-- <li><a href="../About/index.html">About</a></li> -->
           </ul>
         </nav>
       </div>
-
-
-  <div class="title-background">
-    <h2 class="title">Currently Working on...</h2>
-    <p class="main-text"><a href="http://historyapolis.com/mapping-prejudice/">Mapping Prejudice</a>: tracking racially restrictive housing covenants in Minneapolis</p>
-    <div class="underline">
+    
+    <div class ="banner-container">
+      <div id="banner-wrap">
+        <img src="../images/banner-projects.png" class="banner-img-file" id="projects-page-banner-background">
+      </div>
+    </div>   
+    <div class="title-background">
+      <h2 class="title">Projects</h2>
     </div>
-  </div>
-       
-     
-      <div id="map-border" style="text-align: center;">
-     <iframe width="100%" height="520" frameborder="0" src="http://historyapolis.com/KevinsProjects/Covenants-1983674857393026152499/iframe-timelapse/index.html"></iframe></div>
 
 <div id="content">
+
+<!-- Current Project Blocks -->
+      
+    <div class="row">
+        <div class="col-lg-12">
+          <h3 class="header-title">Currently Working On</h3>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 15px;">
+        <div class="col-md-6" id="media-column-large">
+          <a class="press-link" target="_blank" href="https://www.mappingprejudice.org/">
+            <div class="block-text" id="block-text-media-large">
+                <img class="press-imgs" src="../images/mapping-prejudice-map.png" alt="CLA Article Link">
+                <p class="press-text-title">Mapping Prejudice</p>
+                <p class="press-text">Project Manager</p>
+                <p class="press-text">The Mapping Prejudice Project is working to identify and map racial restrictions buried in historic Minneapolis property deeds. We are making the first-ever comprehensive map of racial covenants for an American city. My responsibilities include interfacing with the Tesseract OCR engine, managing crowd-sourced data, data cleaning and analysis, web development, and spatial database construction.</p>
+             </div>
+          </a>
+        </div>
+        <div class="col-md-6" id="media-column-large">
+          <a class="press-link" target="_blank" href="http://prologuedc.com/blog/mapping-segregation/">
+            <div class="block-text" id="block-text-media-large">
+                <img class="press-imgs" src="../images/prologue-dc-map.png" alt="CLA Article Link">
+                <p class="press-text-title">Prologue DC</p>
+                <p class="press-text">GIS Consultant</p>
+                <p class="press-text">I am also currently working as a GIS consultant for Prologue D.C.’s Mapping Segregation initiative. Similar to Mapping Prejudice, this project is also building a spatial database of racially restrictive housing covenants. My primary role is managing the spatial data, building mapping applications, and using raw census records to build a fine-grained spatial database of historic demographic patterns.</p>
+             </div>
+          </a>    
+        </div>
+    </div>
+
+
+<!-- Media Content Blocks -->
       <div class="row">
-         <div class="col-lg-12">
-            <h3 class="header-title">Previous Projects</h3>
-          </div>
+        <div class="col-lg-12">
+          <h3 class="header-title">Previous Projects</h3>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 15px;">
+        <div class="col-md-4" id="media-column-large">
+          <a class="press-link" target="_blank" href="http://historyapolis.com/">
+            <div class="block-text" id="block-text-media">
+                <img class="press-imgs" src="../images/historyapolis-logo.png" alt="CLA Article Link">
+                <p class="press-text-title">Historyapolis Project</p>
+                <p class="press-text">Web Developer</p>
+                <p class="press-text">The Historyapolis Project seeks to illuminate the history of Minneapolis. Inspired by the idea that history is a powerful tool for community-building, our team is working to unearth stories that can explain how the city took shape. I worked as the project’s web developer and GIS specialist, and also contributed as a regular columnist. </p>
+             </div>
+          </a>
+        </div>
+        <div class="col-md-4" id="media-column-large">
+          <a class="press-link" target="_blank" href="http://umn.maps.arcgis.com/apps/webappviewer/index.html?id=dcca7c6495924d28b4f489f5070a25e1">
+            <div class="block-text" id="block-text-media">
+                <img class="press-imgs" src="../images/historic-aerials.png" alt="CLA Article Link">
+                <p class="press-text-title">Twin Cities Historic Aerials Project</p>
+                <p class="press-text">Project Manager</p>
+                <p class="press-text">From the 1940s through the 1980s, the state of Minnesota commissioned a series of black and white aerial photographs. The original images from this collection pertaining to the seven-county were subsequently digitized at the Borchert Map Library. I built this mapping application by georeferencing these historic photographs from the years 1956 and 1966 and combining them with contemporary satellite imagery.</p>
+             </div>
+          </a>    
+        </div>
+        <div class="col-md-4" id="media-column-large"> 
+          <a class="press-link" target="_blank" href="http://historyapolis.com/blog/2014/06/04/summer-in-the-city-hennepin-avenue-1970/">
+            <div class="block-text" id="block-text-media">
+                <img class="press-imgs" src="../images/historic-hennepin.png" alt="CLA Article Link">
+                <p class="press-text-title">Hennepin Avenue: Then and Now</p>
+                <p class="press-text">Web Developer</p>
+                <p class="press-text">In the early summer of 1970, an employee of Minneapolis city government did a photographic survey of Hennepin Avenue in downtown Minneapolis. Hennepin Avenue was one of the oldest commercial strips in Minneapolis, linking the Mississippi River to the southwestern chain of lakes. Through the Historyapolis project, I scanned these images and built a digital exhibit.</p>
+             </div>
+          </a>            
+        </div>
       </div>
 
+<!-- Cartographic Content Blocks -->
       <div class="row">
-        <div class="col-lg-4">
-          <div class="block-text">
-          <h3>Historic Twin Cities Aerials</h3>
-          <p class="text-danger">From the 1940s through the 1960s, the state of Minnesota commissioned a series of black and white aerial photographs. The original images from this collection pertaining to the seven-county metro area wound up at the Center for Urban and Regional affairs, and were later transferred to the Borchert Map Library where they were digitized</p>
-          <p class="main-text">The application  was built using these historic photographs from the years 1956 and 1966, combined with contemporary base imagery.</p>
-          <p><a class="btn btn-primary" href="http://umn.maps.arcgis.com/apps/webappviewer/index.html?id=dcca7c6495924d28b4f489f5070a25e1" role="button">Launch &raquo;</a></p>
-        </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="block-text">
-          <h3>"Minneapolis is Ruined"</h3>
-          <p class="text-danger"> In 1868, two local businessmen began constructing a 2,500 foot tunnel deep below the Mississippi river in the heart of Minneapolis. A year later, the tunnel collapsed. Over the next six years, recurring collapses turned the riverfront into a series of sinkholes that swallowed multiple mills and threatend Minneapolis with economic ruin. </p>
-          <p class="main-text">This web map tells the story of the ill-fated Eastman tunnel, one of the largest disasters the city has ever seen.</p>
-          <p><a class="btn btn-primary" href="http://umn.maps.arcgis.com/apps/MapJournal/index.html?appid=77b5d6b348834ad2ad8bbc91218bc4be" role="button">Launch &raquo;</a></p>
-        </div>
-        </div>
-      <div class="col-lg-4">
-        <div class="block-text">
-          <h3>"A Practical Guide for the Unpracticed Homosexual"</h3>
-          <p class="text-danger">On August 21, 1970, Hundred Flowers, a radical newspaper from the Cedar-Riverside neighborhood, 
-            devoted an entire issue to the burgeoning gay rights movement. "1969 was the year of the New Homosexual," the paper proclaimed. </p>
-          <p class="main-text"> The material was used to construct a visualization of the sites where gay men could, 
-            according the the paper, "reasonably expect to meet others of the same orientation."
-          <p><a class="btn btn-primary" href="http://historyapolis.com/HundredFlowers/" role="button">Launch &raquo;</a></p>
+        <div class="col-lg-12">
+          <h3 class="header-title">Cartography</h3>
         </div>
       </div>
+      <div class="row" style="padding-top: 15px;">
+        <div class="col-md-4" id="media-column-large">
+          <a class="press-link" target="_blank" href="../images/bookstores-map.png">
+            <div class="block-text" id="block-text-media">
+                <img class="press-imgs" src="../images/bookstores-map.png" alt="CLA Article Link">
+                <p class="press-text-title">Pornography in Minneapolis</p>
+                <p class="press-text">"The Battle of the Bookstores and Gay Sexual Liberation in Minneapolis," Middle West Review, (Fall 2016), 1-24.</p>
+             </div>
+          </a>
+        </div>
+        <div class="col-md-4" id="media-column-large">
+          <a class="press-link" target="_blank" href="../images/covenants-map-minneapolis.png">
+            <div class="block-text" id="block-text-media">
+                <img class="press-imgs" src="../images/covenants-map-minneapolis.png" alt="CLA Article Link">
+                <p class="press-text-title">Racial Covenants in Minneapolis</p>
+                <p class="press-text">Open Cities | Open Data: Collaborative Cities in the Information Era, 2018</p>
+             </div>
+          </a>    
+        </div>
+        <div class="col-md-4" id="media-column-large"> 
+          <a class="press-link" target="_blank" href="../images/river-parkway-map.png">
+            <div class="block-text" id="block-text-media">
+                <img class="press-imgs" src="../images/river-parkway-map.png" alt="CLA Article Link">
+                <p class="press-text-title">Seven Oaks and West River Parkway</p>
+                <p class="press-text">"'Playground of the People'? Mapping Racial Covenants in Twentieth-century Minneapolis," Open Rivers: Rethinking The Mississippi, (Spring 2017).</p>
+             </div>
+          </a>            
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="block-text">
-          <h3>Hennepin Avenue: Then and Now</h3>
-          <p class="text-danger">In the early summer of 1970, an employee of Minneapolis city government did a photographic 
-            survey of Hennepin Avenue downtown. The goal was to document six blocks of the city's most famous avenue. 
-            Developed as a main artery for the nineteenth-century city, Hennepin Avenue was one of the oldest 
-            commercial strips in Minneapolis, linking the Mississippi River to the southwestern chain of lakes.</p>
-          <p class="main-text">Click bellow to see a host of legendary Minneapolis establishments through the slider I constructed for the Historyapolis Project.</p>
-            <a class="btn btn-primary" href="http://historyapolis.com/summer-in-the-city-hennepin-avenue-1970/" role="button">Launch &raquo;</a></p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="block-text">
-          <h3>The Minneapolis Riverfront: An Underground History</h3>
-          <p class="text-danger">A complicated system of buried canals, headraces, and tailrace tunnels honeycomb powered the 19th century milling district in Minneapolis. These networks are the unsung hero of the city's days as the flour capital of the world. Hewed into the soft St. Peter sandstone by pick-axe wielding laborers, these tunnels turned St. Anthony Falls into a municipal power plant.</p>
-          <p class="main-text"> This web map digs deep into the buried history of the Minneapolis riverfront to show a differnt side of the city. </p>
-          <a class="btn btn-primary" href="http://umn.maps.arcgis.com/apps/StorytellingSwipe/index.html?appid=1c240f3618d04a24aaf448fd2eaa7788" role="button">Launch &raquo;</a></p>
-        </div>
-       </div>
-        <div class="col-lg-4">
-          <div class="block-text">
-          <h3>Minneapolis: 1958</h3>
-          <p class="text-danger">Orlando Talcott's 1858 map above offers a snapshot of Minneapolis as it began its 
-            transformation from farming village to industrial powerhouse. His "Building Map of Minneapolis" shows a city on the rise. 
-            Yet the neatly ordered streets and economic boasts populating the map only tell part of the story. </p>
-          <p class="main-text">This application attempts to offer a more nuanced take on Minneapolis. By exploring Talcott's map, 
-            we can examine the things he chose to omit as well as depict.</p>
-            <a class="btn btn-primary" href="http://umn.maps.arcgis.com/apps/StorytellingSwipe/index.html?appid=bf8cd7452b33422e9ec66249d31726b4" role="button">Launch &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-</div>
+
+    </div>   
+  </div>
+
 
 <!-- Modal -->
   <div id="myModal" class="modal fade" role="dialog">
@@ -191,6 +231,7 @@
 
       <!-- Site footer -->
       <footer class="footer">
+      <p class="footer-text">© Kevin Ehrman-Solberg, 2018</p>
       </footer>
 
     </div> <!-- /container -->

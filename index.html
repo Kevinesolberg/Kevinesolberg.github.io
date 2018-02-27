@@ -69,9 +69,9 @@
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="btn-menu"><img id="menu-img" src="images/menu.png"> <a id="menu-text">Menu</a>
             </button>
               <ul class="dropdown-menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="Projects">Projects</a></li>
-                <li><a href="Publications">Publications</a></li>
+                <li><a href="Media">Media</a></li>
                 <li><a href="Vita">C.V.</a></li>
               </ul>
     </div>
@@ -79,48 +79,41 @@
 
  <body>
 
-     <div class="container">
+  <div class="container">
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
         <nav>
           <ul class="nav nav-justified">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
             <li><a href="Projects">Projects</a></li>
-            <li><a href="Publications">Publications</a></li>
+            <li><a href="Media">Media</a></li>
             <li><a href="Vita">C.V.</a></li>
             <!--<li><a href="About/index.html">About</a></li>-->
           </ul>
         </nav>
       </div>
-     
-     <!-- Slider --> 
-    <script>
-      $(document).ready(function(){
-      $('.bxslider').bxSlider({
-      auto: true,
-        });
-      });
-    </script>
-    <div id="Slider">
-      <ul class="bxslider">
-        <li><img src="images/FC.png" /></li>
-        <li><img src="images/road.png" /></li>
-        <li><img src="images/MPLS.png" /></li>
-        <li><img src="images/cov.png" /></li>
-      </ul>
-    </div>
+    <div class ="banner-container">
+      <div id="banner-wrap">
+        <img src="images/slider-img-2.png" class="banner-img-file" id="projects-page-banner-background">
+      </div>
+    </div>    
+      <div class="title-background">
+        <h2 class="title">About</h2>
+      </div>
   <div id="content-home">
     <div class="row">
       <div class="col-md-12">
           <p class="main-text" style="padding-top: 20px">
-            A double major in English and history, I received my B.A from Augsburg College in 2015. I am currently working towards my M.A. in the Geographic Information Science program at the University of Minnesota, where I hold a research appointment at the <a href="https://www.lib.umn.edu/borchert">Borchert Map Library</a>. An active proponent of the digital humanities, my work focuses on the intersection of race, place, and historical narrative.
+            A Minneapolis native, I have always had a fascination with the relationships between historic memory and place. This curiosity led me to double major in English and history as an undergraduate at Augsburg University. As I finished my B.A., I became increasingly interested in the capacity of digital tools to construct historic narrative. This conviction led me to the Master’s of Geographic Information Science program at the University of Minnesota. While completing my degree, I began working at the Borchert Map Library, and managed several spatially-oriented digital projects. I am now pursuing my PhD in the Geography, Environment, and Society program at the University of Minnesota.
+
           </p>
           <p class="main-text" style="padding-top: 10px">
-            Born and raised in the Twin Cities, I am a regular contributor to the <a href="http://http://historyapolis.com/">Historyapolis Project</a> and am currently serving as the project's GIS director. I am also the project manager and GIS specialist for the <a href="http://mappingprejudice.org">Mapping Prejudice Project</a>, which is identifying racially restrictive housing covenants in 20th century Minneapolis. By utilizing GIS, optical character recognition, and crowd-sourcing, we hope to build the first comprehensive spatial database of these racial restrictions for an American city. For more on our project, <a href="http://www.startribune.com/massive-project-underway-to-uncover-racist-restrictions-in-minneapolis-housing-deeds/441821703/">check out our recent feature</a> in the <em>Star Tribune</em>.
+            An active proponent of the digital humanities, my work focuses on the intersection of race, place, and historical narrative. I am a regular contributor to the <a href="http://historyapolis.com/">Historyapolis Project</a> and am currently serving as the project's GIS Director. I am also the project manager and GIS specialist for the <a href="https://www.mappingprejudice.org/">Mapping Prejudice Project</a>, which is identifying racially restrictive housing covenants in 20th century Minneapolis. By utilizing GIS, optical character recognition, and crowdsourcing, we hope to build the first comprehensive spatial database of these racial restrictions for an American city. Our work has been profiled by the <a href="http://www.startribune.com/massive-project-underway-to-uncover-racist-restrictions-in-minneapolis-housing-deeds/441821703/"><i>Star Tribune</i></a>, <a href="http://ncph.org/history-at-work/s-103-threatens-digital-history-initiatives-around-race/"><i>The National Council on Public History</i></a>, <a href="http://editions.lib.umn.edu/openrivers/article/mapping-racial-covenants-in-twentieth-century-minneapolis/"><i>Open Rivers</i></a>, <a href="https://nextcity.org/daily/entry/mapping-racism-minneapolis-housing-patterns-racial-covenants"><i>Next City</i></a>, and <a href="https://www.esri.com/about/newsroom/blog/researchers-map-prejudice-in-minneapolis-past/"><i>ESRI</i></a>.
           </p>
           <p class="main-text" style="padding-top: 10px">
-            In addition to my spatial research, I am currently the lead web developer for both Historyapolis and Mapping Prejudice. When I am not too busy building databases and websites, I also dabble in traditional cartography. You can find some of my cartographic work in the <em>Star Tribune</em>, <em>Open Rivers</em>, and the <em>Middle West Review</em>.
+            In addition to my spatial research, I am currently the lead web developer for both Historyapolis and Mapping Prejudice. When I am not too busy building databases and websites, I also dabble in traditional cartography. You can find some of my cartographic work in the <i>Star Tribune</i>, <i>Open Rivers</i>, and the <i>Middle West Review</i>.
+
           </p> 
 
       </div>
@@ -155,7 +148,7 @@
 
       <!-- Site footer -->
       <footer class="footer">
-      <p></p>
+      <p class="footer-text">© Kevin Ehrman-Solberg, 2018</p>
       </footer>
     </div> <!-- /container -->
   </body>
