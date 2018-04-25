@@ -114,8 +114,15 @@ $(document).ready(function () {
 
 //Fire mobile Nav Bar
 $(document).ready(function() {
+
     $('.stickyNavList-btn')
-    .on('click', function(){
-         $('.stickyNav').toggle();
+    .on('click', function() {
+        $('.stickyNav').toggle(); 
     })
-})
+    
+
+});
+
+
+
+ 
