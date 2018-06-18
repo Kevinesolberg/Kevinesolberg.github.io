@@ -910,9 +910,9 @@ p {
 }
 
 .iframe-background {
-    background-color: #9a9a9a;
+    background-color: #9a9a9a75;
     text-align: center;
-    padding: 1%;
+    padding: 6px;
     margin-right: 15%;
     margin-left: 15%;
     
@@ -1660,7 +1660,7 @@ textarea[type="text"] {
         background-position: center top;
     }
     #myiframe{
-        height: 600px;
+        height: 530px;
     }
 }
 @media screen and (max-width: 1300px){
