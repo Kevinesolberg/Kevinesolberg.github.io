@@ -44,13 +44,13 @@
         .done(function(vis, layers) {
           // set zoom scale bounds //
           vis.map.set({
-            minZoom: 11,
-            maxZoom: 15
+            minZoom: 10,
+            maxZoom: 16
           });
           // layer 0 is the base layer, layer 1 is cartodb layer
           layers[0].leafletMap.setMaxBounds([
-          [45.111837, -93.871319], // lat long top left
-          [44.698683, -92.661993]  // lat long bottom right
+          [45.311837, -94.281319], // lat long top left
+          [44.698683, -92.361993]  // lat long bottom right
         ])
           // setInteraction is disabled by default
           layers[1].setInteraction(true);
