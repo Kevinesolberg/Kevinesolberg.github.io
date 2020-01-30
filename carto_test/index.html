@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+        <!--
+            Load Carto's code so we can pull in our Carto maps.
+        -->
+        <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            #map {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="map"></div>
+        <script>
+            var dataLayer;
+
+            $(document).ready(function () {
+                cartodb.createVis('map', 'https://mapref.carto.com/api/v2/viz/e737c3e7-4c92-42bf-a4a8-623f78d1e5ad/viz.json')
+                    .done(function (vis, layers) {
+                        dataLayer = layers[1].getSubLayer(0);
+
+                        var popupTemplate = '<div class="cartodb-popup v2"><a href="#close" class="cartodb-popup-close-button close">x</a><div class="cartodb-popup-content-wrapper"><div class="cartodb-popup-content">{{join_id}} watsan: {{join_id}}</div></div><div class="cartodb-popup-tip-container"></div></div>';
+                        dataLayer.infowindow.set('template_type', 'mustache');
+                        dataLayer.infowindow.set('template', popupTemplate);
+                    });
+            });
+        </script>
+        <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+    </body>
+</html>
+
