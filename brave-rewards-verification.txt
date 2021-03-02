@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: kevinehrman.com
-Token: 6eabfc943217035e77de72d867e84ceb462b5ff30dd6318f2155dcc075ecb058
